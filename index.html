@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Event registration</h1>
+      <p id="description">Register right now while places are available</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <fieldset class="first-fieldset">
+          <label for="name" id="name-label"
+            >Name:
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              pattern="[a-zA-z]"
+              required
+            />
+          </label>
+          <label for="email" id="email-label"
+            >Email:
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+          <label for="number" id="number-label">
+            Age:
+            <input
+              id="number"
+              type="number"
+              min="13"
+              max="120"
+              pattern="[0-9]"
+              placeholder="Enter your age"
+              required
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label
+            >Country
+            <select id="dropdown" required>
+              <option>select one</option>
+              <option>Ukraine</option>
+              <option>USA</option>
+              <option>Great Britain</option>
+              <option>France</option>
+              <option>Germany</option>
+              <option>Italy</option>
+              <option>Greece</option>
+              <option>Austria</option>
+              <option>Spain</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <p>How many tickets do you need?</p>
+          <label for="1">
+            <input
+              class="inline first"
+              id="1"
+              type="radio"
+              name="radio"
+              value="radio"
+              checked
+            />
+            1</label
+          >
+          <label for="2">
+            <input
+              class="inline"
+              id="2"
+              type="radio"
+              name="radio"
+              value="radio"
+            />
+            2</label
+          >
+          <label for="3">
+            <input
+              class="inline"
+              id="3"
+              type="radio"
+              name="radio"
+              value="radio"
+            />
+            3</label
+          >
+        </fieldset>
+        <fieldset>
+          <p>What activities do you prefer?</p>
+          <label for="dance"
+            ><input
+              id="dance"
+              class="first"
+              type="checkbox"
+              name="checkbox"
+              value="checkbox"
+            />
+            dance</label
+          >
+          <label for="sing"
+            ><input
+              id="sing"
+              type="checkbox"
+              name="checkbox"
+              value="checkbox"
+            />
+            sing</label
+          >
+          <label for="swim"
+            ><input
+              id="swim"
+              type="checkbox"
+              name="checkbox"
+              value="checkbox"
+            />
+            swim</label
+          >
+          <label for="do-sports"
+            ><input
+              id="do-sports"
+              type="checkbox"
+              name="checkbox"
+              value="checkbox"
+            />
+            do sports</label
+          >
+          <label for="draw"
+            ><input
+              id="draw"
+              type="checkbox"
+              name="checkbox"
+              value="checkbox"
+            />
+            draw</label
+          >
+          <label for="eat-and-drink"
+            ><input
+              id="eat-and-drink"
+              class="last"
+              type="checkbox"
+              name="checkbox"
+              value="checkbox"
+            />
+            eat and drink</label
+          >
+        </fieldset>
+        <fieldset>
+          <label for="bio">Write your comment here...</label>
+          <textarea id="bio" name="bio" rows="4" cols="30">
+Write your comment here...
+              </textarea
+          >
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

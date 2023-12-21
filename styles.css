@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Roboto;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+fieldset {
+    width: 93%;
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+
+
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+#title,
+#description {
+    margin: 1em auto;
+    text-align: center;
+}
+
+#survey-form {
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #050E5C;
+    width: 70vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 0 0.5rem 2em 2rem;
+}
+
+
+input,
+textarea,
+p,
+select {
+    margin: 10px 10px 10px 0;
+    width: 100%;
+    min-height: 2em;
+    padding-left: 0.5rem;
+}
+
+.inline {
+    width: unset;
+    margin: 0 1rem 0 3rem;
+    vertical-align: middle;
+}
+
+
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    min-width: 200px;
+    color: white;
+    background-color: black;
+}
+
+input[type="checkbox"] {
+    width: unset;
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    margin: 0 0.5em 0 1rem;
+
+}
+
+.first[type="checkbox"] {
+    margin: 0 0.4rem 0 0.5rem;
+}
+
+.first {
+    margin: 0 0.8rem 0 0.5rem;
+}
+
+.last[type="checkbox"] {
+    margin: 0 0.4rem 0 0.5rem;
+}
+   
+   
